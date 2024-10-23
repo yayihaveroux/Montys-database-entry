@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      WIP
+    </title>
+    <style>
+      body {
+        background: #00000022;
+      }
+      .main {
+        background: #FFF;
+        width: 60vw;
+        height: fit-content;
+	margin-left: 20%;
+      }
+.header {
+        width: 100%;
+        height: 10vh;
+margin: none;
+
+      }
+.underline {
+text-decoration: underline;
+}
+.banner {
+        width: 100%;
+        height: 60px;
+text-align: center;
+background: #0022dd;
+color: white;
+margin: 0;
+      }
+
+ul {
+width: 100%;
+margin: 0px;
+padding-left: 0.5%;
+}
+li {
+color: blue;
+margin: 0px;
+width: 33%;
+float: left;
+display: block;
+text-align: center;
+font-size: 1.1em;
+border: 2px black;
+border-style: none none solid none;
+}
+a, a:visited {
+text-decoration: underline;
+color: blue;
+}
+a:hover {
+color: red;
+text-decoration: underline;
+cursor: pointer;
+}
+nav {
+width: 100%;
+}
+h1, h2, p{
+padding: 5px;
+}
+.content {
+margin-top: 25px;
+width: 100%;
+text-align: left;
+height: 1000px;
+}
+#logo {
+float: left;
+width: 50px;
+padding-left: 10px;
+}
+
+form {
+margin-left: 40%;
+}
+    </style>
+  </head>
+  <body>
+    <div class="main">
+	<div class="header">
+
+	<div class="banner">
+	<img id="logo" src="APD_logo.png">
+	<h1>Australian Police Department</h1>
+	</div>
+<nav>
+	<ul>
+	<li><a href="index.html" > announcements </a></li>
+	<li><a href="contact.html"> contact us </a></li>
+	<li><a href="log-in.html"> log in </a></li>
+	</ul>
+</nav>
+	</div>
+	<div class="content">
+<h1 class="underline"> Log in </h1>
+<form id="userForm">
+        <label for="uname">Username:</label><br>
+        <input type="text" id="uname" name="uname" value=""><br>
+        <label for="pass">Password:</label><br>
+        <input type="password" id="pass" name="pass" value=""><br><br>
+        <button id="submit" type="button">Submit</button>
+    </form>
+
+
+	</div>
+    </div>
+<script src="log-in.js"> </script>
+  </body>
+</html>

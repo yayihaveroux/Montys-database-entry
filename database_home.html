@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      WIP
+    </title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+#sidebarParent {
+filter: drop-shadow(1px 1px 0.5px #0088FF);
+position: fixed;
+width: 100vw;
+height: 100vh;
+}
+#outline-container {
+filter: drop-shadow(-2px 2px 0.5px #0088FF) drop-shadow(2px -2px 0.5px #0088FF) drop-shadow(2px 2px 0.5px #0088FF) drop-shadow(-2px -2px 0.5px #0088FF);
+position: fixed;
+width: 100vw;
+height: 100vh;
+}
+
+
+#sidebar {
+position: fixed;
+width: 100vw;
+height: 100vh;
+background: #001033;
+border: 2px #0088FF;
+clip-path: polygon(10% 100%, 10% 25%, 20% 10%, 100% 10%, 100% 0%, 0% 0%, 0% 100%);
+}
+#sidebarBG {
+position: fixed;
+width: 100vw;
+height: 100vh;
+background-image: url("background-tile.png");
+background-size: 40px;
+}
+
+body {
+width: 100%;
+height: 100%;
+padding: 0;
+margin: 0;
+animation: background 5s infinite;
+}
+
+#logo {
+position: fixed;
+height: 80px;
+left: 10px;
+top: 10px;
+animation: logo 0.75s infinite;
+}
+
+#shine {
+height: 100vh;
+position: fixed;
+transform: translateX(200vw);
+filter: blur(30px);
+animation: shine 16s infinite;
+opacity: 0.8;
+}
+
+@keyframes logo {
+0% {filter: invert(100%) drop-shadow(5px 5px #0000FF) drop-shadow(-5px -5px #000000)}
+50% {filter: invert(100%) drop-shadow(5px 5px #000000) drop-shadow(-5px -5px #FF0000)}
+100% {filter: invert(100%) drop-shadow(5px 5px #0000FF) drop-shadow(-5px -5px #000000)}
+}
+
+@keyframes background {
+0% {background: #000011;}
+50% {background: #110000;}
+100% {background: #000011;}
+}
+
+@keyframes shine {
+0% {transform: translateX(200vw)}
+100% {transform: translateX(-100vw)}
+}
+
+
+
+ul {
+position: fixed;
+top: 30vh;
+overflow: auto;
+width: 100vw;
+}
+
+li {
+margin-top: 30px;
+list-style: none;
+
+}
+h1, h2, h3, h4, h5, h6, p, a {
+font-family: "Roboto Condensed", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: italic;
+color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+text-shadow: 2px 2px 0.5px #0055FF, -2px -2px 0.5px #FF3300;
+color: black;
+}
+
+li a {
+display: block;
+clip-path: polygon(0% 20%, 15% 0%, 100% 0%, 100% 80%, 85% 100%, 0% 100%);
+width: 200px;
+height: 65px;
+background: #001033;
+text-align: center;
+color: white;
+font-family: "Roboto Condensed", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: italic;
+vertical-align: center;
+padding-top: 35px;
+font-size: 1.5em;
+}
+
+a:hover {
+transform: translateX(30px);
+}
+
+#content {
+width: 80vw;
+height: 90vh;
+padding-top: 10vh;
+padding-left: 20vw;
+}
+
+    </style>
+  </head>
+  <body>
+
+<div id="sidebarParent">
+
+<div id="sidebar">
+<img src="background_shine.png" id="shine">
+<div id="sidebarBG"> </div>
+
+<img src="APD_logo_secret.png" id="logo">
+</div>
+</div>
+
+<div id="outline-container">
+<ul> <li><a>TEST BUTTON</a></li> <li><a>TEST BUTTON</a></li> <li><a>TEST BUTTON</a></li></ul>
+</div>
+
+<div id="content">
+<h1> TEST HEADING </h1>
+<p> TEST PARAGRAPH MADE FOR TESTING PURPOSES ( I AM TESTING RN FR FR) TRUELY A TESTING MOMENT I AM A TESTER I LOVE TESTING THE TESTING SITUATION IS CRAZY HUGE TESTING DRAMA</div>
+
+  </body>
+</html>
